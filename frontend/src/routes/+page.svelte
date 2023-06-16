@@ -3,7 +3,7 @@
 
 <svelte:head>
 	<title>viibecheck</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="Home" content="Home Page" />
 </svelte:head>
 
 <div>ViibeCheck</div>
