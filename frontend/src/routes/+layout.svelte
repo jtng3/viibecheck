@@ -7,7 +7,9 @@
 		<div
 			class="static bg-primary-700 h-[80px] w-full px-10 flex flex-row items-center justify-center gap-10 text-white"
 		>
-			<div class="font-bold text-xl tracking-widest">ViibeCheck</div>
+			<a class="hover:text-white/50" href="/"
+				><div class="font-bold text-xl tracking-widest">ViibeCheck™</div>
+			</a>
 			<a class="hover:text-white/50" href="/">Home</a>
 			<a class="hover:text-white/50" href="/about">About</a>
 			<a class="hover:text-white/50" href="/search">Search</a>
@@ -21,4 +23,9 @@
 			</div>
 		</main>
 	</div>
+	<footer
+		class="fixed bottom-0 w-full h-[100px] border-t-4 border-primary-400 px-10 pt-5 text-gray-600 bg-white"
+	>
+		Built by JT and LP © 2023, All rights reserved.
+	</footer>
 </div>
