@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.postcss';
 	//START: Geolocation api to be later provided to search component to look for reports within a 50 mile radius
-	function success(position) {
+	function success(position: any) {
 		console.log(position.coords.latitude, position.coords.longitude);
 		const latitude = position.coords.latitude;
 		const longitude = position.coords.longitude;
