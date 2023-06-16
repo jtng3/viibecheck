@@ -1,5 +1,19 @@
 <script lang="ts">
 	import '../app.postcss';
+	//START: Geolocation api to be later provided to search component to look for reports within a 50 mile radius
+	function success(position: any) {
+		console.log(position.coords.latitude, position.coords.longitude);
+	}
+	function error() {
+		alert('Sorry, no position available.');
+	}
+	const options = {
+		enableHighAccuracy: true,
+		maximumAge: 30000,
+		timeout: 27000
+	};
+	const watchID = navigator.geolocation.watchPosition(success, error, options);
+	//End: Geolocation api data
 </script>
 
 <div class="grid grid-cols-1 min-w-screen min-h-screen bg-primary-100 items-start">
