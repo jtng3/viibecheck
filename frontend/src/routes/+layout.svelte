@@ -2,18 +2,22 @@
 	import '../app.postcss';
 </script>
 
-<div class="flex flex-col min-h-screen w-full">
-	<div
-		class="bg-primary-700 h-[80px] w-full px-10 flex flex-row items-center justify-start gap-10 text-white"
-	>
-		<div class="font-bold text-xl tracking-widest">ViibeCheck</div>
-		<a href="/">Home</a>
-		<a href="/about">About</a>
-		<a href="/search">Search</a>
-		<a href="/new_report">New Report</a>
-		<a href="/resources">Resources</a>
+<div class="grid grid-cols-1 w-full h-full">
+	<div class="relative w-full flex flex-col justify-self-center justify-center">
+		<div
+			class="static bg-primary-700 h-[80px] w-full px-10 flex flex-row items-center justify-center gap-10 text-white"
+		>
+			<div class="font-bold text-xl tracking-widest">ViibeCheck</div>
+			<a class="hover:text-white/50" href="/">Home</a>
+			<a class="hover:text-white/50" href="/about">About</a>
+			<a class="hover:text-white/50" href="/search">Search</a>
+			<a class="hover:text-white/50" href="/new_report">New Report</a>
+			<a class="hover:text-white/50" href="/resources">Resources</a>
+		</div>
+		<main class="flex w-full p-10 border justify-center">
+			<div class="grid grid-cols-1 w-full max-w-6xl border">
+				<slot />
+			</div>
+		</main>
 	</div>
-	<main class="flex flex-col p-4 w-full max-w-5xl m-0 box-border">
-		<slot />
-	</main>
 </div>
