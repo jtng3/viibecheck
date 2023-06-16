@@ -12,7 +12,8 @@
 		maximumAge: 30000,
 		timeout: 27000
 	};
-	const watchID = navigator.geolocation.watchPosition(success, error, options);
+	let navigator: any;
+	const watchID: any = navigator.geolocation.watchPosition(success, error, options);
 	//End: Geolocation api data
 </script>
 
