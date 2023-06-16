@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.postcss';
 	import { onMount } from 'svelte';
+	import Logo from '$lib/components/Logo.svelte';
 
 	function success(position: any) {
 		console.log(position.coords.latitude, position.coords.longitude);
@@ -41,9 +42,12 @@
 			<a class="hover:text-white/50" href="/new_report">New Report</a>
 			<a class="hover:text-white/50" href="/resources">Resources</a>
 		</div>
-		<main class="flex w-full p-10 justify-center">
+		<div class="flex items-center justify-center py-5">
+			<Logo />
+		</div>
+		<main class="flex w-full p-10 justify-center pt-0">
 			<!-- Border is only for temporary vision of how we move items within the page -->
-			<div class="grid grid-cols-1 w-full max-w-6xl border bg-white p-10">
+			<div class="grid grid-cols-1 w-full max-w-6xl border rounded-xl bg-white p-10">
 				<slot />
 			</div>
 		</main>
