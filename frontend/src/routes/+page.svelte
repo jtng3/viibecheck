@@ -1,5 +1,4 @@
-<script>
-
+<script lang="ts">
 </script>
 
 <svelte:head>
@@ -7,7 +6,4 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-
-<div>
-	hello from lee and jaeger
-</div>
+<div>hello from lee and jaeger</div>
