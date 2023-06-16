@@ -6,4 +6,8 @@
 
 <div class={Class}>
 	{logo}
+
+	<div class="text-lg font-semibold italic tracking-wide text-primary-400">
+		"Report Suspicious Activity, Empower Your Community."
+	</div>
 </div>
