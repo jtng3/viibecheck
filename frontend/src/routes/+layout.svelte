@@ -1,21 +1,29 @@
 <script lang="ts">
-	import '../app.postcss';
-	//START: Geolocation api to be later provided to search component to look for reports within a 50 mile radius
+	import { onMount } from 'svelte';
+
 	function success(position: any) {
 		console.log(position.coords.latitude, position.coords.longitude);
 		const latitude = position.coords.latitude;
 		const longitude = position.coords.longitude;
 	}
+
 	function error() {
 		alert('Sorry, no position available.');
 	}
+
 	const options = {
 		enableHighAccuracy: true,
 		maximumAge: 30000,
 		timeout: 27000
 	};
-	const watchID = navigator.geolocation.watchPosition(success, error, options);
-	//End: Geolocation api data
+
+	onMount(() => {
+		if ('geolocation' in navigator) {
+			const watchID = navigator.geolocation.watchPosition(success, error, options);
+		} else {
+			alert('Geolocation is not supported in this browser.');
+		}
+	});
 </script>
 
 <div class="grid grid-cols-1 min-w-screen min-h-screen bg-primary-100 items-start">
