@@ -48,6 +48,30 @@
 	<meta name="Search" content="Search Page" />
 </svelte:head>
 
+<!-- Option A -->
+<div class="pb-20">
+	<div class="text-primary-600 text-xl font-bold pb-5">Search ViibeCheck™</div>
+	<form class="grid grid-cols-1 gap-5">
+		<div class="flex flex-row w-full gap-10">
+			<input
+				class="rounded-md focus:border-primary-400 focus:ring-0 border text-gray-500 border-primary-600 w-full placeholder:text-primary-400"
+				placeholder="First Name"
+				type="text"
+			/>
+			<input
+				class="rounded-md focus:border-primary-400 focus:ring-0 border text-gray-500 border-primary-600 w-full placeholder:text-primary-400"
+				placeholder="Last Name"
+				type="text"
+			/>
+		</div>
+		<input
+			placeholder="Phone Number"
+			class="rounded-md focus:border-primary-400 focus:ring-0 border text-gray-500 border-primary-600 w-full placeholder:text-primary-400"
+			type="text"
+		/>
+	</form>
+</div>
+<!-- Option B -->
 <div class="grid grid-cols-1 gap-4">
 	<div class="text-primary-600 text-xl font-bold">Search through previous reports</div>
 	<div
