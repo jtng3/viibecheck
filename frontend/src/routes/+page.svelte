@@ -6,4 +6,5 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
+<div>ViibeCheck</div>
 <div>hello from lee and jaeger</div>
